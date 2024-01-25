@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>下拉框</title>
+    </head>
+    <body>
+        <br><br>
+        <form action="https://shuaici.blog.csdn.net/" method="get" target="_blank">
+            单选下拉框
+            <select name="city">
+                <option value="sh">上海</option>
+                <option value="bj" selected>北京</option>
+                <option value="gz">广州</option>
+                <option value="sz">深圳</option>
+            </select>
+            <br><br>
+            多选下拉框：
+            <select name="color" multiple>
+                <option value="red">红色</option>
+                <option value="yellow">黄色</option>
+                <option value="blue">蓝色</option>
+                <option value="white">白色</option>
+            </select>
+            <br><br>
+            <select name="city">
+                <optgroup label="国内">
+                    <option value="sh">上海</option>
+                    <option value="bj">北京</option>
+                    <option value="gz">广州</option>
+                    <option value="sz">深圳</option>
+                </optgroup>
+                <optgroup label="国外">
+                    <option value="hsd">花生炖</option>
+                    <option value="lsj">落山鸡</option>
+                    <option value="ld">乱炖</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <button type="submit">提交按钮</button>
+
+        </form>
+        <br><br>
+    </body>
+</html>
