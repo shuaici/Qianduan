@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>可见性</title>
+    <style>
+        p.none {
+            display:none;
+            height: 100px;
+            width: 80;}
+        p.hidden {
+            visibility: hidden;
+            height: 100px;
+            width: 80;
+        }
+        p.visible {
+            background-color: chocolate;
+            visibility: visible;
+            height: 100px;
+            width: 80;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p>元素可见性:none(隐藏且不占位置)</p>
+    <p class="none">none</p>
+    <p>元素可见性：hidden</p>
+    <p class="hidden">hidden</p>
+    <p>元素可见性：visible</p>
+    <p class="visible">visible</p>
+</body>
+
+</html>

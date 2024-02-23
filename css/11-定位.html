@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>定位</title>
+    <style>
+        p.static {
+            position: static;
+            border: 3px solid red;
+            top: 20px;
+            left: 50px;
+        }
+
+        p.fixed {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+        }
+
+        p.relative {
+            position: relative;
+            top: -30px;
+            color: red;
+        }
+
+        p.absolute {
+            position: absolute;
+            left: 120px;
+            top: 120px;
+        }
+
+        p.sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: #cae8ca;
+            border: 2px solid #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="static">这是position: static，不受top: 20px，lef：50px影响</p>
+    <p class="fixed">这是position: fixed</p>
+    <p>占位专用</p>
+    <p class="relative">这是position: relative</p>
+    <p>占位专用</p>
+    <p class="absolute">这是position: absolute</p>
+    <p class="sticky">这是position: absolute</p>
+    <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p> <p >More</p>
+</body>
+
+</html>

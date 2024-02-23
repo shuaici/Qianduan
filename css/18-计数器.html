@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>表格</title>
+    <style>
+        body {
+            counter-reset: section;
+        }
+        p {
+             counter-reset: subsection;
+        }
+        h1::before {
+            counter-increment: section;
+            content: "第 " counter(section) " 条：";
+        }
+        p::before {
+            counter-increment: subsection;
+            content: "" counter(section) "." counter(subsection) " ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>头衔</h1>
+    <p>CSDN博客砖家-帅次</p>
+    <p>华为云享砖家-帅次</p>
+    <p>软件设计师(中级)</p>
+
+    <h1>中午吃啥呀</h1>
+    <p>兰州国际</p>
+    <p>全球沙县</p>
+    <p>华中菜饭</p>
+</body>
+
+</html>

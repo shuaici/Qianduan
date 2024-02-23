@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>提示框</title>
+    <style>
+        .tip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+            margin-top: 200px;
+            margin-left: 300px;
+        }
+
+        .tip .tiptext {
+            visibility: hidden;
+            /* 隐藏 */
+            width: 200px;
+            background-color: blueviolet;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* 11-定位 */
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -100px;
+            opacity: 0;
+            transition: opacity 2s;
+
+        }
+
+        .tip .tiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent blueviolet transparent;
+        }
+
+        .tip:hover .tiptext {
+            visibility: visible;/* 显示 */
+            opacity: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">鼠标，你过来呀
+        <span class="tiptext">哎呀呀呀，提示框文本</span>
+    </div>
+
+</body>
+
+</html>
